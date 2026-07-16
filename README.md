@@ -60,8 +60,8 @@ To run this project locally, ensure you have the following installed:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/ResiliaProxy.git
-cd ResiliaProxy
+git clone https://github.com/Ravindu-Sampath-Weerakoon/autoscale_Load_Balancer.git
+cd autoscale_Load_Balancer
 ```
 
 ### Step 2: Set Up Local Conda Environment
@@ -135,7 +135,7 @@ docker compose logs -f nginx
 
 ## 🛠️ Under the Hood SRE Design
 
-### Nginx Event Loop Handling
+### Nginx Dynamic Resolution
 Nginx handles thousands of concurrent connections using an **asynchronous, event-driven, non-blocking** architecture. Rather than dedicating a thread to each open connection, a single worker process handles them using system-level multiplexing (e.g., `epoll` or `kqueue`). This keeps memory usage extremely low.
 
 ### Passive Health Checks
@@ -163,14 +163,14 @@ Follow these steps to initialize git and push this project to your GitHub accoun
 2. **Stage and Commit the Files:**
    ```bash
    git add .
-   git commit -m "feat: initial commit for ResiliaProxy HA load balancer cluster"
+   git commit -m "feat: complete HA proxy & autoscaling backend cluster"
    ```
 
 3. **Set Main Branch and Remote Repository:**
-   Create a new repository named `ResiliaProxy` on GitHub, then link it to your local workspace:
+   Link your local repository to your remote GitHub repository:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/ResiliaProxy.git
+   git remote add origin https://github.com/Ravindu-Sampath-Weerakoon/autoscale_Load_Balancer.git
    ```
 
 4. **Push to GitHub:**
